@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:drawable="$graphic:bg_btn_pre" ohos:state_pressed="true"/>
+    <item ohos:drawable="$graphic:bg_btn_pre" ohos:state_selected="true"/>
+    <item ohos:drawable="$graphic:bg_btn_dis" ohos:state_enabled="false"/>
+
+    <item ohos:drawable="$graphic:bg_btn_nor"/>
+
+</selector>

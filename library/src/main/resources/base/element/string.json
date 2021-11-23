@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "library_library",
+      "value": "library_library"
+    },
+    {
+      "name": "tips_not_wifi",
+      "value": "您当前正在使用移动网络，继续播放将消耗流量"
+    },
+    {
+      "name": "tips_not_wifi_confirm",
+      "value": "继续播放"
+    },
+    {
+      "name": "tips_not_wifi_cancel",
+      "value": "停止播放"
+    },
+    {
+      "name": "no_url",
+      "value": "播放地址无效"
+    },
+    {
+      "name": "replay",
+      "value": "重播"
+    },
+    {
+      "name": "click_to_restart",
+      "value": "点击重试"
+    },
+    {
+      "name": "video_loading_failed",
+      "value": "视频加载失败"
+    }
+  ]
+}

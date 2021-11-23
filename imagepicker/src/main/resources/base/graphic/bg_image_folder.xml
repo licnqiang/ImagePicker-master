@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:bottom="1vp" ohos:left="3vp" ohos:right="1vp" ohos:top="3vp">
+        <shape ohos:shape="rectangle">
+            <solid ohos:color="#D8D8D8"/>
+        </shape>
+    </item>
+    <item ohos:bottom="2vp" ohos:left="2vp" ohos:right="2vp" ohos:top="2vp">
+        <shape ohos:shape="rectangle">
+            <solid ohos:color="#ffffff"/>
+        </shape >
+    </item>
+    <item ohos:bottom="3vp" ohos:left="1vp" ohos:right="3vp" ohos:top="1vp">
+        <shape ohos:shape="rectangle">
+            <solid ohos:color="#9B9B9B"/>
+        </shape>
+    </item>
+    <item ohos:bottom="4vp" ohos:right="4vp">
+        <shape ohos:shape="rectangle">
+            <solid ohos:color="#ffffff"/>
+        </shape>
+    </item>
+</layer-list>

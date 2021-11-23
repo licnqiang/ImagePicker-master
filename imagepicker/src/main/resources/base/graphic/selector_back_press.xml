@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:drawable="$color:ic_back_press" ohos:state_pressed="true"/>
+    <item ohos:drawable="$color:ic_back_press" ohos:state_selected="true"/>
+    <item ohos:drawable="$color:ic_back_press" ohos:state_enabled="false"/>
+
+    <item ohos:drawable="transparent"/>
+
+</selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:background_element="#00000000"
+    ohos:gravity="bottom"
+    ohos:orientation="vertical"
+    ohos:padding="5dip" >
+    
+    <Text
+        ohos:id="$+id:mTv_Title"
+        ohos:width="match_parent"
+        ohos:height="68vp"
+        ohos:top_margin="5dip"
+        ohos:background_element="$graphic:dialog_item_bg_only"
+        ohos:padding="10dip"
+        ohos:text_color="#0073FF"
+        ohos:text_size="18fp"
+        ohos:layout_alignment="center"
+        ohos:visibility="hide"/>
+
+    <ListContainer
+        ohos:id="$+id:dialog_list"
+        ohos:width="match_parent"
+        ohos:top_margin="5dip"
+        ohos:height="match_content" >
+    </ListContainer>
+
+    <Button
+        ohos:id="$+id:mBtn_Cancel"
+        ohos:width="match_parent"
+        ohos:height="40vp"
+        ohos:top_margin="5dip"
+        ohos:background_element="$graphic:dialog_item_bg_only"
+        ohos:text="取消"
+        ohos:text_alignment="center"
+        ohos:text_color="#0073FF"
+        ohos:text_size="18fp" />
+
+</DirectionalLayout>

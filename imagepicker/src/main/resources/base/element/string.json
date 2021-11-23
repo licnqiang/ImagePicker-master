@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "ip_all_images",
+      "value": "所有图片"
+    },
+    {
+      "name": "ip_folder_image_count",
+      "value": "共%1$d张"
+    },
+    {
+      "name": "ip_preview_image_count",
+      "value": "%1$d/%2$d"
+    },
+    {
+      "name": "ip_select_limit",
+      "value": "最多选择%1$d张图片"
+    },
+    {
+      "name": "ip_complete",
+      "value": "完成"
+    },
+    {
+      "name": "ip_select_complete",
+      "value": "完成(%1$d/%2$d)"
+    },
+    {
+      "name": "ip_preview",
+      "value": "预览"
+    },
+    {
+      "name": "ip_preview_count",
+      "value": "预览(%1$d)"
+    },
+    {
+      "name": "ip_photo_crop",
+      "value": "图片裁剪"
+    },
+    {
+      "name": "ip_origin",
+      "value": "原图"
+    },
+    {
+      "name": "ip_origin_size",
+      "value": "原图(%1$s)"
+    }
+  ]
+}

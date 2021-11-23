@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+<!--    ohos:image_src="$graphic:ic_default_image"-->
+    <Image
+        ohos:id="$+id:iv_thumb"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:scale_mode="clip_center"
+        ohos:image_src="#4F4F4F"
+    />
+
+<!--    ohos:background_element="$graphic:ic_cover_shade"-->
+    <Component
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+       />
+
+
+    <Component
+        ohos:id="$+id:mask"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#88000000"
+        ohos:visibility="hide"/>
+
+    <StackLayout
+        ohos:id="$+id:checkView"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_padding="24vp"
+        ohos:clickable="true"
+        ohos:foreground_alignment="top|right"
+        ohos:left_padding="12vp"
+        ohos:right_padding="10vp"
+        ohos:top_padding="12vp">
+
+        <com.lzy.imagepicker.view.SuperCheckBox
+            ohos:id="$+id:cb_check"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:clickable="false"
+            ohos:enabled="false"
+            ohos:focusable="focus_disable"/>
+    </StackLayout>
+</StackLayout>

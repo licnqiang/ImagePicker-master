@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:drawable="$media:image_add_sel" ohos:state_focused="true"/>
+    <item ohos:drawable="$media:image_add_sel" ohos:state_pressed="true"/>
+    <item ohos:drawable="$media:image_add_sel" ohos:state_selected="true"/>
+    <item ohos:drawable="$media:image_add_nor" />
+
+</selector>

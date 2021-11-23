@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:video_quality_wrapper_area"
+    ohos:height="match_parent"
+    ohos:width="240vp"
+    ohos:alignment="center"
+    ohos:background_element="#88000000"
+    ohos:bottom_padding="16vp"
+    ohos:orientation="vertical"
+    ohos:top_padding="10vp">
+
+</DirectionalLayout>

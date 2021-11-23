@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:custom_container"
+    ohos:height="match_content"
+    ohos:width="300vp"
+    ohos:background_element="#F5F5F5"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:custom_title"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:horizontal_center="true"
+        ohos:margin="8vp"
+        ohos:multiple_lines="true"
+        ohos:padding="8vp"
+        ohos:text="$string:tips_not_wifi"
+        ohos:text_size="16fp"
+        ohos:top_margin="10vp"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="10vp">
+
+        <Button
+            ohos:id="$+id:cancel"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:start_margin="100vp"
+            ohos:layout_alignment="vertical_center"
+            ohos:text="$string:tips_not_wifi_cancel"
+            ohos:text_color="#FFE82D87"
+            ohos:text_size="14vp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:id="$+id:resume"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:layout_alignment="vertical_center"
+            ohos:text="$string:tips_not_wifi_confirm"
+            ohos:start_margin="30vp"
+            ohos:end_margin="20vp"
+            ohos:text_color="#FFE82D87"
+            ohos:text_size="14vp"
+            ohos:weight="1"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

@@ -1,0 +1,28 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+ohos {
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    repositories {
+        flatDir {
+            dirs 'libs',project(':imagepicker').file('libs')
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.har'])
+    testCompile'junit:junit:4.12'
+
+
+    implementation project(":imagepicker")
+    implementation 'io.openharmony.tpc.thirdlib:PhotoView:1.0.0'
+    implementation project(':imageloader')
+
+}
+
+decc {
+    supportType = ['html','xml']
+}

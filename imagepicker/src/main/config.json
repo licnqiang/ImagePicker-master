@@ -1,0 +1,42 @@
+{
+  "app": {
+    "bundleName": "com.lzy.imagepickerdemo",
+    "vendor": "lzy",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.lzy.imagepicker",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "imagepicker",
+      "moduleType": "har"
+    },
+  "abilities": [
+    {
+      "name": "com.lzy.imagepicker.ui.ImageGridAbility",
+      "orientation": "unspecified",
+      "icon": "$media:icon",
+      "type": "page",
+      "launchType": "standard"
+    },{
+      "name": "com.lzy.imagepicker.ui.VideoAbility",
+      "orientation": "unspecified",
+      "icon": "$media:icon",
+      "type": "page",
+      "launchType": "standard"
+    }
+  ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "library"
+    },
+    {
+      "name": "permreason_file",
+      "value": "允许读取文件系统"
+    },
+  ]
+}

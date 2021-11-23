@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:background_element="$graphic:jz_dialog_progress_bg"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="120vp"
+        ohos:width="155vp"
+        ohos:orientation="vertical">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$media:jz_brightness_video"
+            ohos:layout_alignment="horizontal_center"
+            ohos:top_margin="20vp"/>
+
+        <Text
+            ohos:id="$+id:tv_brightness"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="horizontal_center"
+            ohos:text_alignment="horizontal_center"
+            ohos:text_color="#ffffffff"
+            ohos:text_size="16fp"
+            ohos:top_margin="12vp"/>
+
+        <ProgressBar
+            ohos:id="$+id:brightness_progressbar"
+            ohos:height="3vp"
+            ohos:width="match_parent"
+            ohos:bottom_margin="20vp"
+            ohos:layout_alignment="horizontal_center"
+            ohos:max="100"
+            ohos:top_margin="8vp"/>
+    </DirectionalLayout>
+</DirectionalLayout>

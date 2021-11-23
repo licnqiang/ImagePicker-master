@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:width="match_parent"
+    ohos:height="match_content">
+
+    <Text
+        ohos:id="$+id:video_item"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_padding="12vp"
+        ohos:bottom_padding="12vp"
+        ohos:text_size="18fp"
+        ohos:text_color="#FFF"
+        ohos:text_alignment="center"/>
+
+</DependentLayout>

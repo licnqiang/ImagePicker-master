@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ic_back_press",
+      "value": "#323336"
+    },
+    {
+      "name": "ip_color_primary",
+      "value": "#393A3F"
+    },
+    {
+      "name": "ip_color_primary_dark",
+      "value": "#303135"
+    },
+    {
+      "name": "ip_color_primary_trans",
+      "value": "#ec2f3335"
+    },
+    {
+      "name": "ip_color_press",
+      "value": "#ffe0e0e0"
+    },
+    {
+      "name": "ip_camera_pre",
+      "value": "#353535"
+    },
+    {
+      "name": "ip_color_accent",
+      "value": "#1AAD19"
+    },
+    {
+      "name": "ip_text_secondary_inverted",
+      "value": "#000000"
+    },
+    {
+      "name": "ip_text_primary_inverted",
+      "value": "#000000"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "Name": " ImagePicker ",
+        "License": " Apache License ",
+        "License File": " LICENSE ",
+        "Version Number": " 0.5.1 ",
+        "Upstream URL": " https://github.com/jeasonlzy/ImagePicker/archive/0.5.1.tar.gz ",
+        "Description": " 自定义相册，完全仿微信UI，实现了拍照、图片选择（单选/多选）、 裁剪 、旋转、等功能。 "
+    }
+]
+

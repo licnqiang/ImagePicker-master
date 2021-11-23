@@ -1,0 +1,126 @@
+{
+  "app": {
+    "bundleName": "com.lzy.imagepickerdemo",
+    "vendor": "lzy",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.lzy.imagepickerdemo",
+    "name": ".MyApplication",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.lzy.imagepickerdemo.ImagePickerAbility",
+        "icon": "$media:icon",
+        "description": "$string:imagepickerability_description",
+        "visible": false,
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.lzy.imagepickerdemo.wxdemo.WxDemoAbility",
+        "orientation": "unspecified",
+        "icon": "$media:icon",
+        "description": "$string:wxdemoability_description",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.lzy.imagepicker.ui.ImageGridAbility",
+        "orientation": "unspecified",
+        "icon": "$media:icon",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.lzy.imagepicker.ui.ImagePreviewAbility",
+        "orientation": "unspecified",
+        "icon": "$media:icon",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.lzy.imagepicker.ui.ImageCropAbility",
+        "orientation": "unspecified",
+        "icon": "$media:icon",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.lzy.imagepickerdemo.CameraAbility",
+        "icon": "$media:icon",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra": ""
+        }
+      ]
+    },
+    "reqPermissions": [
+      {
+        "name": "com.lzy.imagepickerdemo.DataAbility.DATA"
+      },
+      {
+        "reason": "Internet",
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "reason": "Read User Storage",
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "reason": "Write User Storage",
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      },
+      {
+        "reason": "Get Camera",
+        "name": "ohos.permission.CAMERA"
+      },
+      {
+        "reason": "Get Camera",
+        "name": "ohos.permission.READ_MEDIA"
+      },
+      {
+        "reason": "Get Media",
+        "name": "ohos.permission.MEDIA_LOCATION"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+    <item ohos:drawable="black" ohos:state_pressed="true"/>
+    <item ohos:drawable="$color:ip_camera_pre"/>
+</selector>

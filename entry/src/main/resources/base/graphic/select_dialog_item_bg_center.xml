@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:state_pressed="true"><shape>
+            <solid ohos:color="#CACACB" />
+
+        </shape></item>
+    <item><shape>
+            <solid ohos:color="#EBEBEB" />
+
+        </shape></item>
+
+</selector>

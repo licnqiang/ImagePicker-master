@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:width="match_parent"
+            ohos:height="match_parent">
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="vertical">
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#0d7360"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:width="0vp"
+                ohos:height="match_parent"
+                ohos:weight="1"
+                ohos:layout_alignment="vertical_center"
+                ohos:text="ImageLoader"
+                ohos:text_size="18fp"
+                ohos:text_color="black"
+                 ohos:text_weight="700"/>
+
+            <DirectionalLayout
+                ohos:width="0vp"
+                ohos:height="match_content"
+                ohos:orientation="horizontal"
+                ohos:weight="2">
+
+                <RadioContainer
+                    ohos:width="match_parent"
+                    ohos:height="match_content"
+                    ohos:background_element="#0d7360"
+                    ohos:orientation="horizontal">
+
+                    <Checkbox
+                        ohos:id="$+id:rb_uil"
+                        ohos:width="match_content"
+                        ohos:height="match_content"
+                        ohos:text_size="18fp"
+                        ohos:text="UIL"/>
+
+<!--                    <Checkbox-->
+<!--                        ohos:id="$+id:rb_glide"-->
+<!--                        ohos:width="match_content"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:text="Glide"/>-->
+
+<!--                    <Checkbox-->
+<!--                        ohos:id="$+id:rb_picasso"-->
+<!--                        ohos:width="match_content"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:text="Picasso"/>-->
+
+<!--                    <Checkbox-->
+<!--                        ohos:id="$+id:rb_fresco"-->
+<!--                        ohos:width="match_content"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:enabled="false"-->
+<!--                        ohos:text="Fresco"-->
+<!--                        ohos:text_color="#000000"/>-->
+
+<!--                    <Checkbox-->
+<!--                        ohos:id="$+id:rb_xutils3"-->
+<!--                        ohos:width="match_content"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:text="xUtils3"/>-->
+
+<!--                    <Checkbox-->
+<!--                        ohos:id="$+id:rb_xutils"-->
+<!--                        ohos:width="match_content"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:text="xUtils"/>-->
+                </RadioContainer>
+            </DirectionalLayout>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#bf2f2f"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:width="0vp"
+                ohos:height="match_content"
+                ohos:layout_alignment="vertical_center"
+                ohos:weight="1"
+                ohos:text="Select Mode"
+                ohos:text_color="black"
+                ohos:text_size="18fp"
+                 ohos:text_weight="700"/>
+
+            <RadioContainer
+                ohos:width="0vp"
+                ohos:height="match_content"
+                ohos:weight="2"
+                ohos:orientation="horizontal">
+
+                <Checkbox
+                    ohos:id="$+id:rb_single_select"
+                    ohos:width="0vp"
+                    ohos:height="match_content"
+                    ohos:weight="1"
+                    ohos:text_size="18fp"
+                    ohos:text="Single Select"/>
+
+                <Checkbox
+                    ohos:id="$+id:rb_muti_select"
+                    ohos:width="0vp"
+                    ohos:height="match_content"
+                    ohos:weight="1"
+                    ohos:text_size="18fp"
+                    ohos:text="Multi Select"/>
+
+            </RadioContainer>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="30vp"
+            ohos:background_element="#bf2f2f"
+            ohos:alignment="vertical_center"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text="selectLimit"
+                ohos:text_size="18fp"
+                ohos:text_color="black"
+                 ohos:text_weight="700"/>
+
+            <Text
+                ohos:id="$+id:tv_select_limit"
+                ohos:width="0vp"
+                ohos:height="match_content"
+                ohos:weight="1"
+                ohos:text_alignment="center"
+                ohos:text="9"
+                ohos:text_color="black"
+                ohos:text_weight="700"/>
+
+            <Slider
+                ohos:id="$+id:sb_select_limit"
+                ohos:width="0vp"
+                ohos:height="match_content"
+                ohos:weight="4"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#6476ed"
+            ohos:orientation="horizontal">
+
+            <Checkbox
+                ohos:id="$+id:cb_show_camera"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text_size="18fp"
+                ohos:text="显示相机(Show Camera)"/>
+
+            <Checkbox
+                ohos:id="$+id:cb_crop"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text_size="18fp"
+                ohos:text="裁剪(Crop)"/>
+        </DirectionalLayout>
+
+        <Checkbox
+            ohos:id="$+id:cb_isSaveRectangle"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#6476ed"
+            ohos:text_alignment="left"
+            ohos:text_size="18fp"
+            ohos:text="是否按矩形区域保存裁剪图片"/>
+
+        <RadioContainer
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#6476ed"
+            ohos:orientation="horizontal">
+
+            <Checkbox
+                ohos:id="$+id:rb_crop_square"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text="矩形"
+                ohos:text_size="18fp"/>
+
+            <TextField
+                ohos:id="$+id:et_crop_width"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:hint="Width"
+                ohos:text_input_type="pattern_number"
+                ohos:min_width="50vp"
+                ohos:text_size="18fp"/>
+
+            <TextField
+                ohos:id="$+id:et_crop_height"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:hint="Height"
+                ohos:text_input_type="pattern_number"
+                ohos:min_width="50vp"
+                ohos:text_size="18fp"/>
+
+            <Checkbox
+                ohos:id="$+id:rb_crop_circle"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text="圆形"
+                ohos:text_size="18fp"/>
+
+            <TextField
+                ohos:id="$+id:et_crop_radius"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:hint="Radius"
+                ohos:text_input_type="pattern_number"
+                ohos:min_width="50vp"
+                ohos:text_size="18fp"/>
+        </RadioContainer>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:background_element="#6476ed"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text_size="18fp"
+                ohos:text="图片保存宽:"
+                ohos:text_color="#000"/>
+
+            <TextField
+                ohos:id="$+id:et_outputx"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:hint="Width"
+                ohos:text_input_type="pattern_number"
+                ohos:min_width="50vp"
+                ohos:text_size="18fp"/>
+
+            <Text
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text_size="18fp"
+                ohos:text="图片保存高:"
+                ohos:text_color="#000"/>
+
+            <TextField
+                ohos:id="$+id:et_outputy"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:hint="Height"
+                ohos:text_input_type="pattern_number"
+                ohos:min_width="50vp"
+                ohos:text_size="18fp"/>
+        </DirectionalLayout>
+
+        <Button
+            ohos:id="$+id:btn_open_gallery"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="Open Gallery"
+            ohos:text_size="30fp"
+            />
+
+        <Image
+            ohos:id="$+id:testImage"
+            ohos:width="match_parent"
+            ohos:height="match_parent"/>
+
+        <ListContainer
+            ohos:id="$+id:gridview"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:column_count="3"
+            />
+
+    </DirectionalLayout>
+</ScrollView>

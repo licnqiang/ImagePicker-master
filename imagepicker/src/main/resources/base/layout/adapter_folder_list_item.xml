@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:width="match_parent"
+    ohos:height="match_content"
+    ohos:background_element="$graphic:bg_folder_item"
+    ohos:alignment="vertical_center"
+    ohos:orientation="horizontal">
+
+    <StackLayout
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:background_element="$graphic:bg_image_folder"
+        ohos:margin="12vp">
+
+        <Image
+            ohos:id="$+id:iv_cover"
+            ohos:width="78vp"
+            ohos:height="78vp"
+            ohos:bottom_margin="6vp"
+            ohos:right_margin="6vp"
+            ohos:scale_mode="stretch"
+            ohos:image_src="$graphic:ic_default_image" />
+
+    </StackLayout>
+
+    <DirectionalLayout
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1"
+        ohos:alignment="vertical_center"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:tv_folder_name"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="$string:ip_all_images"
+            ohos:text_color="#212121"
+            ohos:text_size="14fp" />
+
+        <Text
+            ohos:id="$+id:tv_image_count"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:top_margin="4vp"
+            ohos:text="共0张"
+            ohos:text_color="#999999"
+            ohos:text_size="12fp" />
+    </DirectionalLayout>
+
+    <Image
+        ohos:id="$+id:iv_folder_check"
+        ohos:width="24vp"
+        ohos:height="24vp"
+        ohos:left_margin="8vp"
+        ohos:right_margin="20vp"
+        app:srcCompat="$graphic:ic_vector_check" />
+
+</DirectionalLayout>

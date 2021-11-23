@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+    <item ohos:drawable="$media:checkbox_checked" ohos:state_selected="true"/>
+    <item ohos:drawable="$media:checkbox_checked" ohos:state_checked="true"/>
+    <item ohos:drawable="$media:checkbox_normal"/>
+</selector>

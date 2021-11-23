@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "ImagePicker"
+    },
+    {
+      "name": "imagepickerability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "wxdemoability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+apply plugin: 'com.huawei.ohos.library'
+
+
+rootProject.ext{
+    DEFAULT_GROUP_ID = 'io.openharmony.tpc.thirdlib'
+    DEFAULT_ARTIFACT_ID = 'ImagePicker'
+    DEFAULT_VERSION = '1.0.0'
+}
+ohos {
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.har'])
+    testCompile'junit:junit:4.12'
+    implementation 'io.openharmony.tpc.thirdlib:PhotoView:1.0.0'
+    api project(':library')
+}

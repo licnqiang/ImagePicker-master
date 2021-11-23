@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:background_element="$graphic:jz_dialog_progress_bg"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="152vp"
+        ohos:orientation="vertical">
+
+        <Image
+            ohos:id="$+id:duration_image_tip"
+            ohos:height="38vp"
+            ohos:width="38vp"
+            ohos:scale_mode="stretch"
+            ohos:layout_alignment="horizontal_center"
+            ohos:top_margin="16vp"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alignment="horizontal_center"
+            ohos:layout_alignment="horizontal_center"
+            ohos:orientation="horizontal"
+            ohos:top_margin="20vp">
+
+            <Text
+                ohos:id="$+id:tv_current"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_color="#fff85959"
+                ohos:text_size="14fp"/>
+
+            <Text
+                ohos:id="$+id:tv_duration"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_color="#ffffffff"
+                ohos:text_size="14fp"/>
+        </DirectionalLayout>
+
+        <ProgressBar
+            ohos:id="$+id:duration_progressbar"
+            ohos:height="4vp"
+            ohos:width="match_parent"
+            ohos:bottom_margin="16vp"
+            ohos:layout_alignment="horizontal_center"
+            ohos:left_margin="16vp"
+            ohos:max="100"
+            ohos:right_margin="16vp"
+            ohos:top_margin="8vp"/>
+    </DirectionalLayout>
+</DirectionalLayout>

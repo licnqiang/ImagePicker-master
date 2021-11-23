@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item ohos:state_pressed="true">
+        <shape>
+            <solid ohos:color="#CACACB"/>
+
+            <corners ohos:bottomLeftRadius="0vp" ohos:bottomRightRadius="0vp" ohos:topLeftRadius="5vp"
+                     ohos:topRightRadius="5vp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid ohos:color="#EBEBEB"/>
+
+            <corners ohos:bottomLeftRadius="0vp" ohos:bottomRightRadius="0vp" ohos:topLeftRadius="5vp"
+                     ohos:topRightRadius="5vp"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <DependentLayout
+        ohos:id="$+id:root_container"
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:id="$+id:surface_container"
+            ohos:height="match_parent"
+            ohos:width="match_parent" />
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:align_parent_bottom="$+id:root_container"
+            ohos:bottom_margin="30vp"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:exit"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:weight="1"
+                ohos:background_element="#cccccc"
+                ohos:layout_alignment="vertical_center"
+                ohos:text="EXIT"/>
+
+            <Button
+                ohos:id="$+id:tack_picture_btn"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:background_element="#eeeeee"
+                ohos:weight="1"
+                ohos:layout_alignment="vertical_center"
+                ohos:text="picture"/>
+
+            <Button
+                ohos:id="$+id:switch_camera_btn"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:weight="1"
+                ohos:background_element="#aaaaaa"
+                ohos:layout_alignment="vertical_center"
+                ohos:text="cameraBtn"/>
+        </DirectionalLayout>
+    </DependentLayout>
+</DirectionalLayout>

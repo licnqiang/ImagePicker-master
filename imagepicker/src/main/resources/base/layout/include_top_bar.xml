@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:width="match_parent"
+    ohos:height="48vp"
+    ohos:background_element="$color:ip_color_primary"
+    ohos:clickable="true">
+
+    <Image
+        ohos:id="$+id:btn_back"
+        ohos:width="48vp"
+        ohos:height="match_parent"
+        ohos:vertical_center="true"
+        ohos:background_element="$graphic:selector_back_press"
+        ohos:padding="12vp"
+        app:srcCompat="$graphic:ic_arrow_back" />
+
+    <Component
+        ohos:width="2px"
+        ohos:height="match_parent"
+        ohos:bottom_margin="12vp"
+        ohos:top_margin="12vp"
+        ohos:right_of="$id:btn_back"
+        ohos:background_element="#2E2E32" />
+
+    <Text
+        ohos:id="$+id:tv_des"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:vertical_center="true"
+        ohos:left_margin="12vp"
+        ohos:right_of="$id:btn_back"
+        ohos:text="图片"
+        ohos:text_size="18fp"
+        ohos:text_color="#ffffff" />
+
+    <Button
+        ohos:id="$+id:btn_ok"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:align_parent_right="true"
+        ohos:vertical_center="true"
+        ohos:left_margin="8vp"
+        ohos:right_margin="8vp"
+        ohos:background_element="$graphic:selector_top_ok"
+        ohos:min_height="30vp"
+        ohos:min_width="48vp"
+        ohos:right_padding="16.0vp"
+        ohos:left_padding="16.0vp"
+        ohos:text="完成(0/3)"
+        ohos:text_color="#ffffff"
+        ohos:text_size="14fp" />
+
+    <Image
+        ohos:id="$+id:btn_del"
+        ohos:width="48vp"
+        ohos:height="match_parent"
+        ohos:align_parent_right="true"
+        ohos:vertical_center="true"
+        ohos:background_element="$graphic:selector_back_press"
+        ohos:padding="12vp"
+        app:srcCompat="$graphic:ic_vector_delete"
+        ohos:visibility="hide"
+       />
+</DependentLayout>

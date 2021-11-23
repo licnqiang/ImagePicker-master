@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:content"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#ffffff"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:id="$+id:footer_bar"
+        ohos:height="48vp"
+        ohos:width="match_parent"
+        ohos:background_element="$color:white"
+        ohos:clickable="true">
+
+        <Image
+            ohos:id="$+id:btn_back"
+            ohos:height="match_parent"
+            ohos:width="48vp"
+            ohos:background_element="$graphic:selector_back_press"
+            ohos:image_src="$graphic:ic_arrow_back"
+            ohos:padding="12vp"
+            ohos:vertical_center="true"/>
+
+        <DependentLayout
+            ohos:id="$+id:ll_dir"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:horizontal_center="true"
+            ohos:left_padding="16vp"
+            ohos:right_padding="16vp">
+
+            <Text
+                ohos:id="$+id:tv_dir"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:max_text_lines="1"
+                ohos:padding_for_text="false"
+                ohos:text="$string:ip_all_images"
+                ohos:text_color="#000000"
+                ohos:text_size="16fp"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:vertical_center="true"/>
+
+            <Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:align_bottom="$id:tv_dir"
+                ohos:bottom_margin="2vp"
+                ohos:image_src="$media:text_indicator"
+                ohos:left_margin="4vp"
+                ohos:right_of="$id:tv_dir"/>
+
+        </DependentLayout>
+
+        <Button
+            ohos:id="$+id:btn_ok"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_right="true"
+            ohos:background_element="$graphic:selector_top_ok"
+            ohos:left_margin="8vp"
+            ohos:left_padding="16.0vp"
+            ohos:min_height="30vp"
+            ohos:min_width="48vp"
+            ohos:right_margin="8vp"
+            ohos:right_padding="16.0vp"
+            ohos:text="完成(0/3)"
+            ohos:text_color="#000000"
+            ohos:text_size="14fp"
+            ohos:vertical_center="true"/>
+
+        <Image
+            ohos:id="$+id:btn_del"
+            ohos:height="match_parent"
+            ohos:width="48vp"
+            ohos:align_parent_right="true"
+            ohos:background_element="$graphic:selector_back_press"
+            ohos:image_src="$graphic:ic_vector_delete"
+            ohos:padding="12vp"
+            ohos:vertical_center="true"
+            ohos:visibility="hide"
+            />
+    </DependentLayout>
+
+
+    <DependentLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#ffffff">
+
+        <ListContainer
+            ohos:id="$+id:recycler"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:bottom_padding="50vp"
+            ohos:left_padding="2vp"
+            ohos:orientation="vertical"
+            ohos:right_padding="2vp"
+            ohos:top_padding="2vp"/>
+
+        <DependentLayout
+            ohos:height="48vp"
+            ohos:width="match_parent"
+            ohos:align_parent_bottom="true">
+
+            <Text
+                ohos:id="$+id:btn_preview"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:align_parent_right="true"
+                ohos:background_element="$color:ip_color_primary"
+                ohos:left_padding="16vp"
+                ohos:right_padding="16vp"
+                ohos:text="预览(3)"
+                ohos:text_alignment="center"
+                ohos:text_color="#000000"
+                ohos:text_size="16fp"/>
+
+        </DependentLayout>
+    </DependentLayout>
+</DirectionalLayout>

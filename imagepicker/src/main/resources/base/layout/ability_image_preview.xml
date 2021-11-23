@@ -1,0 +1,129 @@
+<DependentLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:tools="http://schemas.ohos.com/tools"
+    ohos:id="$+id:content"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:background_element="#000">
+
+    <PageSlider
+        ohos:id="$+id:viewpager"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:background_element="#000" />
+
+    <DependentLayout
+        ohos:id="$+id:top_bar"
+        ohos:height="48vp"
+        ohos:width="match_parent"
+        ohos:background_element="$color:ip_color_primary"
+        ohos:clickable="true">
+
+        <Image
+            ohos:id="$+id:btn_back"
+            ohos:height="match_parent"
+            ohos:width="48vp"
+            ohos:background_element="$graphic:selector_back_press"
+            ohos:padding="12vp"
+            ohos:vertical_center="true"
+            ohos:image_src="$graphic:ic_arrow_back"/>
+
+        <Component
+            ohos:height="match_parent"
+            ohos:width="2px"
+            ohos:background_element="#2E2E32"
+            ohos:bottom_margin="12vp"
+            ohos:right_of="$id:btn_back"
+            ohos:top_margin="12vp"/>
+
+        <Text
+            ohos:id="$+id:tv_des"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:left_margin="12vp"
+            ohos:right_of="$id:btn_back"
+            ohos:text="图片"
+            ohos:text_color="#ffffff"
+            ohos:text_size="18fp"
+            ohos:vertical_center="true"/>
+
+        <Button
+            ohos:id="$+id:btn_ok"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_right="true"
+            ohos:background_element="$graphic:selector_top_ok"
+            ohos:left_margin="8vp"
+            ohos:left_padding="16.0vp"
+            ohos:min_height="30vp"
+            ohos:min_width="48vp"
+            ohos:right_margin="8vp"
+            ohos:right_padding="16.0vp"
+            ohos:text="完成(0/3)"
+            ohos:text_color="#ffffff"
+            ohos:text_size="18fp"
+            ohos:vertical_center="true"/>
+
+        <Image
+            ohos:id="$+id:btn_del"
+            ohos:height="match_parent"
+            ohos:width="48vp"
+            ohos:align_parent_right="true"
+            ohos:background_element="$graphic:selector_back_press"
+            ohos:padding="12vp"
+            ohos:vertical_center="true"
+            ohos:visibility="hide"
+            />
+    </DependentLayout>
+
+
+    <DirectionalLayout
+        ohos:id="$+id:bottom_bar"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:align_parent_bottom="true"
+        ohos:background_element="#cc22292c"
+        ohos:orientation="vertical"
+        ohos:visibility="hide"
+        tools:visibility="visible">
+
+        <DependentLayout
+            ohos:width="match_parent"
+            ohos:height="48vp">
+
+            <com.lzy.imagepicker.view.SuperCheckBox
+                ohos:id="$+id:cb_origin"
+                ohos:width="match_content"
+                ohos:height="match_parent"
+                ohos:left_margin="10vp"
+                ohos:left_padding="8vp"
+                ohos:text="原图(3.07M)"
+                ohos:text_size="18fp"
+                ohos:text_color_on="#ffffffff"
+                ohos:text_color_off="#ffffffff"
+                ohos:text_color="#ffffffff"
+                ohos:visibility="invisible" />
+
+            <com.lzy.imagepicker.view.SuperCheckBox
+                ohos:id="$+id:cb_check"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:align_parent_right="true"
+                ohos:vertical_center="true"
+                ohos:right_margin="12vp"
+                ohos:element_padding="4vp"
+                ohos:padding_for_text="true"
+                ohos:left_padding="8vp"
+                ohos:text_size="18fp"
+                ohos:text="选择"
+                ohos:text_color_on="#ffffffff"
+                ohos:text_color_off="#ffffffff"
+                ohos:text_color="#ffffffff" />
+        </DependentLayout>
+
+        <Component
+            ohos:id="$+id:margin_bottom"
+            ohos:width="match_parent"
+            ohos:height="0vp"
+            ohos:background_element="#000" />
+    </DirectionalLayout>
+</DependentLayout>

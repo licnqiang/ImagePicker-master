@@ -1,0 +1,45 @@
+{
+  "app": {
+    "bundleName": "com.lzy.imagepickerdemo",
+    "vendor": "lzy",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.lzy.imagepickerdemo",
+    "name": "testModule",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "test",
+      "moduleType": "feature"
+    },
+    "abilities": [
+      {
+        "name": "decc.testkit.runner.EntryAbility",
+        "description": "Test Entry Ability",
+        "icon": "$media:icon",
+        "label": "TestAbility",
+        "launchType": "standard",
+        "orientation": "landscape",
+        "visible": true,
+        "formEnabled": false,
+        "type": "page"
+      }
+    ]
+  }
+}

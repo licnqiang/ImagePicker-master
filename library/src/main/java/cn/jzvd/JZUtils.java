@@ -64,14 +64,12 @@ public class JZUtils {
      * @return if wifi is connected,return true
      */
     public static boolean isWifiConnected(Context context) {
-        // 获取网络管理对象
-        NetManager netManager = NetManager.getInstance(context);
-        // 获取NetCapabilities对象
-        NetCapabilities netCapabilities = netManager.getNetCapabilities(netManager.getDefaultNet());
-        // NetCapabilities.NET_CAPABILITY_VALIDATED表示连接了网络，并且可以上网
-        return netCapabilities.hasCap(NetCapabilities.NET_CAPABILITY_VALIDATED) &&
-                netCapabilities.hasBearer(NetCapabilities.BEARER_WIFI) ||
-                netCapabilities.hasBearer(NetCapabilities.BEARER_WIFI_AWARE);
+//        // 获取网络管理对象
+//        NetManager netManager = NetManager.getInstance(context);
+//        // 获取NetCapabilities对象
+//        NetCapabilities netCapabilities = netManager.getNetCapabilities(netManager.getDefaultNet());
+//        // NetCapabilities.NET_CAPABILITY_VALIDATED表示连接了网络，并且可以上网
+        return true;
     }
 
     /**

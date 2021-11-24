@@ -6,6 +6,7 @@ import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.ResourceTable;
 import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImageGridAbility;
+import com.lzy.imagepicker.ui.VideoAbility;
 import com.lzy.imagepicker.util.ResUtil;
 import com.lzy.imagepicker.util.Utils;
 import com.lzy.imagepicker.util.view.LogUtil;
@@ -13,6 +14,8 @@ import com.lzy.imagepicker.util.view.RoundedImageView;
 import com.lzy.imagepicker.view.SuperCheckBox;
 import com.lzy.imagepicker.view.ViewHolder;
 import ohos.aafwk.ability.Ability;
+import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.*;
 import ohos.agp.components.element.PixelMapElement;
 import ohos.agp.components.element.StateElement;
@@ -160,7 +163,17 @@ public class ImageRecyclerProvider extends RecycleItemProvider {
             ivThumb.setClickedListener(new Component.ClickedListener() {
                 @Override
                 public void onClick(Component v) {
-                    if (listener != null) listener.onImageItemClick(rootView, imageItem, position);
+//                    if (listener != null) listener.onImageItemClick(rootView, imageItem, position);
+                    Intent intent = new Intent();
+                    Operation operation = new Intent.OperationBuilder()
+                            .withDeviceId("")
+                            .withBundleName(ability.getBundleName())
+                            .withAbilityName(VideoAbility.class.getName())
+                            .build();
+                    intent.setOperation(operation);
+                    intent.setParam("video", imageItem.path);
+                    LogUtil.error("测试---测试---测试",imageItem.path);
+                    ability.startAbility(intent);
                 }
             });
             checkView.setClickedListener(new Component.ClickedListener() {
@@ -196,16 +209,7 @@ public class ImageRecyclerProvider extends RecycleItemProvider {
             } else {
                 cbCheck.setVisibility(Component.HIDE);
             }
-            LogUtil.error("测试", "uriSchema: " + imageItem.uriSchema);
-            LogUtil.error("测试", "name: " + imageItem.name);
-            LogUtil.error("测试", "path: " + imageItem.path);
-            LogUtil.error("测试", "id: " + imageItem.id);
-            PixelMap resMap = AVThumbnailUtils.createVideoThumbnail(new File("/storage/emulated/0/DCIM/Camera/VID_20211123_224738.mp4"), new Size(40, 40));
-//            AVMetadataHelper  avMetadataHelper = new AVMetadataHelper();
-//            avMetadataHelper.setSource(imageItem.path);
-//            PixelMap resMap=avMetadataHelper.fetchVideoPixelMapByTime();
-            ivThumb.setPixelMap(resMap);
-//            imagePicker.getImageLoader().displayImage(ability, "/storage/emulated/0/DCIM/Camera/VID_20211123_224738.mp4" , ivThumb, mImageSize, mImageSize); //显示图片
+
         }
 
         @Override

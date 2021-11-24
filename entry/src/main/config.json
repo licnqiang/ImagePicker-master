@@ -95,6 +95,9 @@
     },
     "reqPermissions": [
       {
+        "name": "ohos.permission.ACCELEROMETER"
+      },
+      {
         "name": "com.lzy.imagepickerdemo.DataAbility.DATA"
       },
       {

@@ -22,5 +22,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar','*.har'])
     testCompile'junit:junit:4.12'
     implementation 'io.openharmony.tpc.thirdlib:PhotoView:1.0.0'
+    implementation 'io.openharmony.tpc.thirdlib:BottomNavigation:1.0.3'
     api project(':library')
 }

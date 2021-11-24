@@ -83,7 +83,7 @@ public class JZMediaSystem extends JZMediaInterface {
                         public void onMediaTimeIncontinuity(Player.MediaTimeInfo mediaTimeInfo) {
                         }
                     });
-                    Source source = new Source(Uri.parse("/storage/emulated/0/DCIM/Camera/VID_20211123_235439.mp4").toString());
+                    Source source = new Source("/storage/emulated/0/DCIM/Camera/VID_20211125_001413.mp4");
                     mediaPlayer.setSource(source);
                     mediaPlayer.prepare();
                     mediaPlayer.setVideoSurface(SAVED_SURFACE.getSurface());

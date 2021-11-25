@@ -12,12 +12,9 @@ import ohos.aafwk.ability.fraction.FractionAbility;
 import ohos.aafwk.ability.fraction.FractionManager;
 import ohos.aafwk.ability.fraction.FractionScheduler;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.Component;
 import ohos.agp.components.ComponentContainer;
 import ohos.agp.utils.Color;
 import ohos.agp.window.service.WindowManager;
-import ohos.sensor.agent.CategoryMotionAgent;
-import ohos.sensor.bean.CategoryMotion;
 import ohos.utils.PlainArray;
 import ohos.utils.PlainIntArray;
 

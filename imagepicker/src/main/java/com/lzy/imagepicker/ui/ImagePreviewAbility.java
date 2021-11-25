@@ -59,6 +59,10 @@ public class ImagePreviewAbility extends ImagePreviewBaseAbility implements Imag
         stateElement.addState(new int[]{ComponentState.COMPONENT_STATE_CHECKED}, ResUtil.getPixelMapDrawable(this, ResourceTable.Media_checkbox_checked));
         stateElement.addState(new int[]{ComponentState.COMPONENT_STATE_EMPTY}, ResUtil.getPixelMapDrawable(this, ResourceTable.Media_checkbox_normal));
         mCbCheck.setButtonElement(stateElement);
+        StateElement stateElementisOrigin = new StateElement();
+        stateElementisOrigin.addState(new int[]{ComponentState.COMPONENT_STATE_CHECKED}, ResUtil.getPixelMapDrawable(this, ResourceTable.Media_orig));
+        stateElementisOrigin.addState(new int[]{ComponentState.COMPONENT_STATE_EMPTY}, ResUtil.getPixelMapDrawable(this, ResourceTable.Media_ori));
+        mCbOrigin.setButtonElement(stateElementisOrigin);
         //初始化当前页面的状态
         onImageSelected(0, null, false);
         ImageItem item = mImageItems.get(mCurrentPosition);

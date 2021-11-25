@@ -62,7 +62,7 @@ public class ImageDataSource {
             public void run() {
                 try {
                     if (path == null) {
-                        resultSet = helper.query(AVStorage.Video.Media.EXTERNAL_DATA_ABILITY_URI, null, null);
+                        resultSet = helper.query(AVStorage.Images.Media.EXTERNAL_DATA_ABILITY_URI, null, null);
 
             } else {
                 resultSet = helper.query(Uri.getUriFromFile(new File(path)), null, null);

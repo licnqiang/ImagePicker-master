@@ -100,8 +100,7 @@
                 ohos:text_size="18fp"
                 ohos:text_color_on="#ffffffff"
                 ohos:text_color_off="#ffffffff"
-                ohos:text_color="#ffffffff"
-                ohos:visibility="invisible" />
+                ohos:text_color="#ffffffff"/>
 
             <com.lzy.imagepicker.view.SuperCheckBox
                 ohos:id="$+id:cb_check"

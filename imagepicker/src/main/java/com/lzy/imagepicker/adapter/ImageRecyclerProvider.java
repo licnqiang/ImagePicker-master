@@ -163,17 +163,17 @@ public class ImageRecyclerProvider extends RecycleItemProvider {
             ivThumb.setClickedListener(new Component.ClickedListener() {
                 @Override
                 public void onClick(Component v) {
-//                    if (listener != null) listener.onImageItemClick(rootView, imageItem, position);
-                    Intent intent = new Intent();
-                    Operation operation = new Intent.OperationBuilder()
-                            .withDeviceId("")
-                            .withBundleName(ability.getBundleName())
-                            .withAbilityName(VideoAbility.class.getName())
-                            .build();
-                    intent.setOperation(operation);
-                    intent.setParam("video", imageItem.path);
-                    LogUtil.error("测试---测试---测试",imageItem.path);
-                    ability.startAbility(intent);
+                    if (listener != null) listener.onImageItemClick(rootView, imageItem, position);
+//                    Intent intent = new Intent();
+//                    Operation operation = new Intent.OperationBuilder()
+//                            .withDeviceId("")
+//                            .withBundleName(ability.getBundleName())
+//                            .withAbilityName(VideoAbility.class.getName())
+//                            .build();
+//                    intent.setOperation(operation);
+//                    intent.setParam("video", imageItem.path);
+//                    LogUtil.error("测试---测试---测试",imageItem.path);
+//                    ability.startAbility(intent);
                 }
             });
             checkView.setClickedListener(new Component.ClickedListener() {
@@ -209,6 +209,8 @@ public class ImageRecyclerProvider extends RecycleItemProvider {
             } else {
                 cbCheck.setVisibility(Component.HIDE);
             }
+
+            imagePicker.getImageLoader().displayImage(ability, imageItem.uriSchema , ivThumb, mImageSize, mImageSize); //显示图片
 
         }
 
